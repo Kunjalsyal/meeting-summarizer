@@ -1,6 +1,7 @@
 ````markdown
----
 
+```md
+---
 
 ## 🌸 Bloom Notes  
 **AI-powered meeting summarizer that runs locally — no subscriptions, no BS**
@@ -54,9 +55,6 @@ venv\Scripts\activate
 
 # Mac/Linux
 source venv/bin/activate
-````
-
----
 
 ### 3. Install dependencies
 
