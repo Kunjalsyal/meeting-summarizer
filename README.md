@@ -1,4 +1,7 @@
 ````markdown
+-----
+
+
 ## 🌸 Bloom Notes  
 **AI-powered meeting summarizer that runs locally — no subscriptions, no BS**
 
