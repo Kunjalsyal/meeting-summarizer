@@ -1,5 +1,5 @@
 ````markdown
-# 🌸 Bloom Notes  
+## 🌸 Bloom Notes  
 **AI-powered meeting summarizer that runs locally — no subscriptions, no BS**
 
 Turn raw meeting audio into clean, structured notes with action items, decisions, and summaries — without sending your data to random servers.
