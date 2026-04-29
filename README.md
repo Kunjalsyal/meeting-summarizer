@@ -1,5 +1,4 @@
-
-```md
+````markdown
 ---
 
 ## 🌸 Bloom Notes  
@@ -54,90 +53,12 @@ venv\Scripts\activate
 
 # Mac/Linux
 source venv/bin/activate
+````
+
+---
 
 ### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-```
-
----
-
-### 4. Set API key
-
-```bash
-# Windows CMD
-set GROQ_API_KEY=your_key
-
-# PowerShell
-$env:GROQ_API_KEY="your_key"
-
-# Mac/Linux
-export GROQ_API_KEY=your_key
-```
-
----
-
-### 5. Run the app
-
-```bash
-python app.py
-```
-
-Open: [http://localhost:5000](http://localhost:5000)
-
----
-
-## 🎯 Usage
-
-1. Enter meeting details
-2. Upload audio file
-3. Start processing
-4. View:
-
-   * Summary
-   * Action items
-   * Decisions
-5. Export PDF
-
----
-
-## ⚙️ Whisper Models
-
-Edit `transcriber.py` to change model:
-
-| Model    | Speed   | Accuracy |
-| -------- | ------- | -------- |
-| tiny     | fastest | lower    |
-| base     | fast    | good     |
-| small    | medium  | better   |
-| medium   | slow    | high     |
-| large-v3 | slowest | best     |
-
----
-
-## 📌 Features
-
-* Local transcription (no API required)
-* Fast LLM summarization
-* Structured meeting notes
-* PDF export
-* Simple UI
-
----
-
-## 🧩 Future Improvements
-
-* Speaker identification
-* Live transcription
-* UI improvements
-* Multi-language support
-
----
-
-## 💡 Summary
-
-Converts meeting audio into structured notes — fast, simple, and mostly local.
-
-```
 ```
