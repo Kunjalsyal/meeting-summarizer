@@ -1,88 +1,143 @@
-# 🌸 Bloom Notes — AI Meeting Summarizer
+````markdown
+# 🌸 Bloom Notes  
+**AI-powered meeting summarizer that runs locally — no subscriptions, no BS**
 
-A fully local + free AI meeting summarizer using:
-- **faster-whisper** — local Whisper transcription (no API key)
-- **Groq API** — free LLM summarization (free tier, no credit card)
-- **ReportLab** — PDF export (local, free)
-- **Flask** — lightweight Python web server
+Turn raw meeting audio into clean, structured notes with action items, decisions, and summaries — without sending your data to random servers.
 
 ---
 
-## ⚙️ Setup (Python 3.11 recommended)
+## 🚀 What this actually does
+- Upload a meeting recording  
+- Generate a full transcript (runs locally using Whisper)  
+- Convert it into structured notes using an LLM  
+- Export clean meeting minutes as a PDF  
 
-### 1. Get a FREE Groq API Key
-1. Go to https://console.groq.com
-2. Sign up (free, no credit card required)
-3. Go to API Keys → Create API Key
-4. Copy the key (starts with `gsk_...`)
+---
 
-### 2. Create & activate a virtual environment
+## 🧠 Why this exists
+Most meeting tools:
+- Hide useful features behind paywalls  
+- Depend heavily on cloud APIs  
+- Or store sensitive data externally  
+
+Bloom Notes is built to be:
+- Local-first  
+- Free to use  
+- Simple and practical  
+
+---
+
+## ⚡ Tech Stack
+- faster-whisper (local transcription)
+- Groq API (LLM summarization)
+- Flask (backend)
+- ReportLab (PDF generation)
+
+---
+
+## 🛠 Setup
+
+### 1. Get Groq API key (free)
+https://console.groq.com
+
+---
+
+### 2. Create virtual environment
 ```bash
 python -m venv venv
 
-# Windows:
+# Windows
 venv\Scripts\activate
 
-# Mac/Linux:
+# Mac/Linux
 source venv/bin/activate
-```
+````
+
+---
 
 ### 3. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-> **Note:** `faster-whisper` will download the Whisper `base` model (~150MB) on first run automatically.
+---
 
-### 4. Set your Groq API key
+### 4. Set API key
 
-**Windows (PowerShell):**
-```powershell
-$env:GROQ_API_KEY="gsk_your_key_here"
-```
-
-**Windows (CMD):**
-```cmd
-set GROQ_API_KEY=gsk_your_key_here
-```
-
-**Mac/Linux:**
 ```bash
-export GROQ_API_KEY=gsk_your_key_here
+# Windows CMD
+set GROQ_API_KEY=your_key
+
+# PowerShell
+$env:GROQ_API_KEY="your_key"
+
+# Mac/Linux
+export GROQ_API_KEY=your_key
 ```
+
+---
 
 ### 5. Run the app
+
 ```bash
 python app.py
 ```
 
-Open your browser at: **http://localhost:5000**
+Open: [http://localhost:5000](http://localhost:5000)
 
 ---
 
 ## 🎯 Usage
-1. Enter meeting title, date, and participant names
-2. Upload your audio file (MP3, WAV, M4A, OGG, FLAC, etc.)
-3. Click **Upload & Start** — transcription and summarization run automatically
-4. View your structured meeting notes with action items, decisions, and follow-ups
-5. Click **Export PDF** to download professional meeting minutes
+
+1. Enter meeting details
+2. Upload audio file
+3. Start processing
+4. View:
+
+   * Summary
+   * Action items
+   * Decisions
+5. Export PDF
 
 ---
 
-## 🔧 Whisper Model Options
-Edit `transcriber.py` to change the model:
-| Model | Size | Speed | Accuracy |
-|-------|------|-------|----------|
-| `tiny` | 75MB | Fastest | Lower |
-| `base` | 150MB | Fast | Good (default) |
-| `small` | 490MB | Medium | Better |
-| `medium` | 1.5GB | Slow | Great |
-| `large-v3` | 3GB | Slowest | Best |
+## ⚙️ Whisper Models
+
+Edit `transcriber.py` to change model:
+
+| Model    | Speed   | Accuracy |
+| -------- | ------- | -------- |
+| tiny     | fastest | lower    |
+| base     | fast    | good     |
+| small    | medium  | better   |
+| medium   | slow    | high     |
+| large-v3 | slowest | best     |
 
 ---
 
-## 📦 Tech Stack (All Free)
-- `faster-whisper` — CTranslate2-based Whisper, runs on CPU
-- `groq` — Groq SDK (free tier: 14,400 requests/day)
-- `flask` — Web framework
-- `reportlab` — PDF generation
+## 📌 Features
+
+* Local transcription (no API required)
+* Fast LLM summarization
+* Structured meeting notes
+* PDF export
+* Simple UI
+
+---
+
+## 🧩 Future Improvements
+
+* Speaker identification
+* Live transcription
+* UI improvements
+* Multi-language support
+
+---
+
+## 💡 Summary
+
+Converts meeting audio into structured notes — fast, simple, and mostly local.
+
+```
+```
